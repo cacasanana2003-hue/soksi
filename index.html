@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Struktur SOKSI Maluku Utara</title>
+  <title>Struktur SOKSI Provinsi Maluku Utara</title>
   <style>
     body {
-      font-family: "Arial", sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
-      background-color: #fff;
-      color: #000;
     }
     header {
-      background: linear-gradient(to right, #b80000, #ff1a1a);
+      background: linear-gradient(90deg, #b50000, #ff3333);
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 20px 10px;
     }
     header img {
       width: 90px;
@@ -25,139 +24,126 @@
     }
     header h1 {
       margin: 0;
-      font-size: 1.8em;
-      letter-spacing: 1px;
-    }
-    section {
-      padding: 20px;
-      border-bottom: 1px solid #ddd;
-    }
-    h2 {
-      color: #b80000;
-      border-bottom: 2px solid #b80000;
-      padding-bottom: 5px;
-    }
-    .struktur {
-      margin-top: 10px;
-      line-height: 1.8;
-    }
-    .struktur div {
-      display: flex;
-      justify-content: space-between;
-      padding: 2px 0;
-    }
-    .jabatan {
+      font-size: 1.6em;
       font-weight: bold;
     }
-    footer {
-      text-align: center;
-      background: #b80000;
-      color: white;
-      padding: 10px 0;
-      font-size: 0.9em;
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      color: #b50000;
+      border-bottom: 2px solid #ffd6d6;
+      padding-bottom: 5px;
+      margin-top: 0;
+      font-size: 1.1em;
+    }
+    .card p {
+      margin: 5px 0;
+      font-size: 0.95em;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dotted #ddd;
+      padding-bottom: 3px;
+    }
+    .label {
+      font-weight: 600;
+      color: #555;
+    }
+    .value {
+      text-align: right;
+      color: #000;
+      flex-grow: 1;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/LOGO_SOKSI.png" alt="Logo SOKSI">
-    <h1>STRUKTUR DEWAN PIMPINAN DAERAH SOKSI<br>MALUKU UTARA</h1>
+    <img src="logo.png" alt="Logo SOKSI">
+    <h1>KOMPOSISI PERSONALIA SOKSI<br>PROVINSI MALUKU UTARA</h1>
   </header>
 
-  <section>
-    <h2>Halmahera Barat</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Halmahera Barat</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Halmahera Barat</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Halmahera Barat</span></div>
+  <div class="container">
+
+    <div class="card">
+      <h2>HALMAHERA BARAT</h2>
+      <p><span class="label">Ketua</span><span class="value">Ahmad Zakir Mando</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">H. Munir Husen</span></p>
+      <p><span class="label">Bendahara</span><span class="value">Inggrit Wongker</span></p>
     </div>
-  </section>
 
-  <section>
-    <h2>Halmahera Tengah</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Halmahera Tengah</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Halmahera Tengah</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Halmahera Tengah</span></div>
+    <div class="card">
+      <h2>HALMAHERA TENGAH</h2>
+      <p><span class="label">Ketua</span><span class="value">Fahris Abdullah</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">Afrianto Zainal</span></p>
+      <p><span class="label">Bendahara</span><span class="value">Amairudin Umagapi</span></p>
     </div>
-  </section>
 
-  <section>
-    <h2>Halmahera Selatan</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Halmahera Selatan</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Halmahera Selatan</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Halmahera Selatan</span></div>
+    <div class="card">
+      <h2>HALMAHERA TIMUR</h2>
+      <p><span class="label">Ketua</span><span class="value">Idrus Enos Maneke</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">Safrin Suhaiman</span></p>
+      <p><span class="label">Bendahara</span><span class="value">Marsilia Hatuwe</span></p>
     </div>
-  </section>
 
-  <section>
-    <h2>Halmahera Utara</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Halmahera Utara</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Halmahera Utara</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Halmahera Utara</span></div>
+    <div class="card">
+      <h2>HALMAHERA SELATAN (HALSEL)</h2>
+      <p><span class="label">Ketua</span><span class="value">Sanusi Kasim</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">Rahman Mustafa</span></p>
+      <p><span class="label">Bendahara</span><span class="value">—</span></p>
     </div>
-  </section>
 
-  <section>
-    <h2>Halmahera Timur</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Halmahera Timur</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Halmahera Timur</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Halmahera Timur</span></div>
+    <div class="card">
+      <h2>HALMAHERA UTARA (HALUT)</h2>
+      <p><span class="label">Ketua</span><span class="value">—</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">—</span></p>
+      <p><span class="label">Bendahara</span><span class="value">—</span></p>
     </div>
-  </section>
 
-  <section>
-    <h2>Kota Ternate</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Kota Ternate</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Kota Ternate</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Kota Ternate</span></div>
+    <div class="card">
+      <h2>KOTA TERNATE</h2>
+      <p><span class="label">Ketua</span><span class="value">Nadjamudin, S.Sos</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">Salman Alfarizi, S.H.</span></p>
+      <p><span class="label">Bendahara</span><span class="value">Saldi Mandea</span></p>
     </div>
-  </section>
 
-  <section>
-    <h2>Kota Tidore Kepulauan</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Kota Tidore</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Kota Tidore</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Kota Tidore</span></div>
+    <div class="card">
+      <h2>KOTA TIDORE</h2>
+      <p><span class="label">Ketua</span><span class="value">Muhammad Husein</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">Abdurrahman Saraha</span></p>
+      <p><span class="label">Bendahara</span><span class="value">Taher Toduho</span></p>
     </div>
-  </section>
 
-  <section>
-    <h2>Kabupaten Kepulauan Sula</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Kepulauan Sula</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Kepulauan Sula</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Kepulauan Sula</span></div>
+    <div class="card">
+      <h2>KEPULAUAN SULA</h2>
+      <p><span class="label">Ketua</span><span class="value">Abdurrahman</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">Djunaidi Fataruba</span></p>
+      <p><span class="label">Bendahara</span><span class="value">Olong Koroy</span></p>
     </div>
-  </section>
 
-  <section>
-    <h2>Kabupaten Pulau Taliabu</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Pulau Taliabu</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Pulau Taliabu</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Pulau Taliabu</span></div>
+    <div class="card">
+      <h2>PULAU TALIABU</h2>
+      <p><span class="label">Ketua</span><span class="value">Moch. Fachtoni Idris</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">Asis Armin, S.Sos</span></p>
+      <p><span class="label">Bendahara</span><span class="value">Harlan Jailan, S.T.</span></p>
     </div>
-  </section>
 
-  <section>
-    <h2>Kabupaten Pulau Morotai</h2>
-    <div class="struktur">
-      <div><span class="jabatan">Ketua</span><span>Nama Ketua Pulau Morotai</span></div>
-      <div><span class="jabatan">Sekretaris</span><span>Nama Sekretaris Pulau Morotai</span></div>
-      <div><span class="jabatan">Bendahara</span><span>Nama Bendahara Pulau Morotai</span></div>
+    <div class="card">
+      <h2>PULAU MOROTAI</h2>
+      <p><span class="label">Ketua</span><span class="value">—</span></p>
+      <p><span class="label">Sekretaris</span><span class="value">—</span></p>
+      <p><span class="label">Bendahara</span><span class="value">—</span></p>
     </div>
-  </section>
 
-  <footer>
-    © 2025 SOKSI Provinsi Maluku Utara
-  </footer>
-
+  </div>
 </body>
 </html>
