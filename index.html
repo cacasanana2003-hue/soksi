@@ -14,17 +14,22 @@
 
     /* ===== HEADER ===== */
     header {
-      background: #FFD700; /* Warna kuning Golkar */
-      color: #000;
       text-align: center;
-      padding: 25px 10px;
-      border-bottom: 5px solid #b50000; /* Garis merah khas SOKSI */
     }
 
-    header img {
+    header .logo-area {
+      background: #fff; /* Logo background putih */
+      padding: 20px 0;
+    }
+
+    header .logo-area img {
       width: 100px;
       height: auto;
-      margin-bottom: 10px;
+    }
+
+    header .text-area {
+      background: #FFD700; /* Warna kuning Golkar */
+      padding: 15px 10px;
     }
 
     header h1 {
@@ -69,18 +74,17 @@
       margin: 5px 0;
       font-size: 0.95em;
       display: flex;
-      justify-content: space-between;
-      border-bottom: 1px dotted #ddd;
-      padding-bottom: 3px;
+      justify-content: flex-start; /* rata kiri */
+      gap: 10px; /* jarak antara jabatan dan nama */
     }
 
     .label {
       font-weight: 600;
       color: #555;
+      width: 100px; /* semua label sama lebar agar nama sejajar */
     }
 
     .value {
-      text-align: right;
       color: #000;
       flex-grow: 1;
     }
@@ -89,82 +93,86 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="Logo SOKSI">
-    <h1>SOKSI</h1>
-    <h2>PENGURUS KABUPATEN/KOTA</h2>
-    <h2>PROVINSI MALUKU UTARA</h2>
+    <div class="logo-area">
+      <img src="logo.png" alt="Logo SOKSI">
+    </div>
+    <div class="text-area">
+      <h1>SOKSI</h1>
+      <h2>PENGURUS KABUPATEN/KOTA</h2>
+      <h2>PROVINSI MALUKU UTARA</h2>
+    </div>
   </header>
 
   <div class="container">
 
     <div class="card">
       <h2>HALMAHERA BARAT</h2>
-      <p><span class="label">Ketua</span><span class="value">Ahmad Zakir Mando</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">H. Munir Husen</span></p>
-      <p><span class="label">Bendahara</span><span class="value">Inggrit Wongker</span></p>
+      <p><span class="label">Ketua :</span><span class="value">Ahmad Zakir Mando</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">H. Munir Husen</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">Inggrit Wongker</span></p>
     </div>
 
     <div class="card">
       <h2>HALMAHERA TENGAH</h2>
-      <p><span class="label">Ketua</span><span class="value">Fahris Abdullah</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">Afrianto Zainal</span></p>
-      <p><span class="label">Bendahara</span><span class="value">Amairudin Umagapi</span></p>
+      <p><span class="label">Ketua :</span><span class="value">Fahris Abdullah</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">Afrianto Zainal</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">Amairudin Umagapi</span></p>
     </div>
 
     <div class="card">
       <h2>HALMAHERA TIMUR</h2>
-      <p><span class="label">Ketua</span><span class="value">Idrus Enos Maneke</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">Safrin Suhaiman</span></p>
-      <p><span class="label">Bendahara</span><span class="value">Marsilia Hatuwe</span></p>
+      <p><span class="label">Ketua :</span><span class="value">Idrus Enos Maneke</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">Safrin Suhaiman</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">Marsilia Hatuwe</span></p>
     </div>
 
     <div class="card">
       <h2>HALMAHERA SELATAN (HALSEL)</h2>
-      <p><span class="label">Ketua</span><span class="value">Sanusi Kasim</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">Rahman Mustafa</span></p>
-      <p><span class="label">Bendahara</span><span class="value">—</span></p>
+      <p><span class="label">Ketua :</span><span class="value">Sanusi Kasim</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">Rahman Mustafa</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">—</span></p>
     </div>
 
     <div class="card">
       <h2>HALMAHERA UTARA (HALUT)</h2>
-      <p><span class="label">Ketua</span><span class="value">—</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">—</span></p>
-      <p><span class="label">Bendahara</span><span class="value">—</span></p>
+      <p><span class="label">Ketua :</span><span class="value">—</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">—</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">—</span></p>
     </div>
 
     <div class="card">
       <h2>KOTA TERNATE</h2>
-      <p><span class="label">Ketua</span><span class="value">Nadjamudin, S.Sos</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">Salman Alfarizi, S.H.</span></p>
-      <p><span class="label">Bendahara</span><span class="value">Saldi Mandea</span></p>
+      <p><span class="label">Ketua :</span><span class="value">Nadjamudin, S.Sos</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">Salman Alfarizi, S.H.</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">Saldi Mandea</span></p>
     </div>
 
     <div class="card">
       <h2>KOTA TIDORE</h2>
-      <p><span class="label">Ketua</span><span class="value">Muhammad Husein</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">Abdurrahman Saraha</span></p>
-      <p><span class="label">Bendahara</span><span class="value">Taher Toduho</span></p>
+      <p><span class="label">Ketua :</span><span class="value">Muhammad Husein</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">Abdurrahman Saraha</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">Taher Toduho</span></p>
     </div>
 
     <div class="card">
       <h2>KEPULAUAN SULA</h2>
-      <p><span class="label">Ketua</span><span class="value">Abdurrahman</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">Djunaidi Fataruba</span></p>
-      <p><span class="label">Bendahara</span><span class="value">Olong Koroy</span></p>
+      <p><span class="label">Ketua :</span><span class="value">Abdurrahman</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">Djunaidi Fataruba</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">Olong Koroy</span></p>
     </div>
 
     <div class="card">
       <h2>PULAU TALIABU</h2>
-      <p><span class="label">Ketua</span><span class="value">Moch. Fachtoni Idris</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">Asis Armin, S.Sos</span></p>
-      <p><span class="label">Bendahara</span><span class="value">Harlan Jailan, S.T.</span></p>
+      <p><span class="label">Ketua :</span><span class="value">Moch. Fachtoni Idris</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">Asis Armin, S.Sos</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">Harlan Jailan, S.T.</span></p>
     </div>
 
     <div class="card">
       <h2>PULAU MOROTAI</h2>
-      <p><span class="label">Ketua</span><span class="value">—</span></p>
-      <p><span class="label">Sekretaris</span><span class="value">—</span></p>
-      <p><span class="label">Bendahara</span><span class="value">—</span></p>
+      <p><span class="label">Ketua :</span><span class="value">—</span></p>
+      <p><span class="label">Sekretaris :</span><span class="value">—</span></p>
+      <p><span class="label">Bendahara :</span><span class="value">—</span></p>
     </div>
 
   </div>
